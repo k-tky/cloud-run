@@ -1,6 +1,9 @@
 # Clour Run のテスト
 - [Cloud Run](https://cloud.google.com/run/?hl=ja)
 
+### 環境変数
+- PROJECT_ID  
+GCPプロジェクトID
 ### Makefile
 - make build  
 ローカルでのDockerのビルド
