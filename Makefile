@@ -8,4 +8,7 @@ deploy_cloud:
 	gcloud builds submit --tag gcr.io/$(PROJECT_ID)/go-server
 
 run_cloud:
-	gcloud run deploy --image gcr.io/$(PROJECT_ID)/go-server --platform=managed
+	gcloud run deploy --region=asia-northeast1 --image gcr.io/$(PROJECT_ID)/go-server --platform=managed
+
+run_dockerhub:
+	gcloud run deploy --region=asia-northeast1 --image nginx:latest --platform=managed
